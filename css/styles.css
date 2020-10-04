@@ -1,0 +1,119 @@
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after { 			/*2-2 CODIGO ESPECIAL estos codigos (1-2 , 2-2) sirve para por 
+                                ejemplo si se le da un ancho a una etiqueta de bloque se establesca ese
+                                ancho y no incremente cuando se le da un padding o un borde*/
+    box-sizing: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(51, 172, 115);
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 50%;
+}
+
+#site-main{
+    background-color: white;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+    padding: 3rem;
+}
+
+.app-container h2{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+#categories{
+    display: flex;
+}
+
+.category-item{
+    background-color: rgb(238, 205, 20);
+    border-radius: 5px;
+    color: white;
+    height: 6rem;
+    justify-content: space-between;
+    margin-right: .5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 33%;
+}
+
+.category-item:last-of-type{
+    margin-right: 0;
+}
+
+.form-box{
+    /* border: 1px solid red; */
+    position: relative;
+    margin-top: 2rem;
+}
+
+#form{
+    /* border: 1px solid blue; */
+    display: flex;
+}
+
+#form::before{
+    border: 2px solid black;
+    border-left: none;
+    border-top: none;
+    content: '';
+    height: 1rem;
+    position: absolute;
+    bottom: 16px;
+    left: -8px;
+    transform: rotate(-45deg);
+    width: 1rem;
+}
+
+input, select{
+    border: none;
+    padding: 1rem;
+}
+
+input{
+    width: 70%;
+}
+
+select{
+    width: 30%;
+}
+
+.tasks{
+    margin-top: 4rem;
+}
+
+.task{
+    display: flex;
+    align-items: baseline;
+}
+
+.tasks input{
+    width: 5%;
+}
+
+.tasks span{
+    width: 80%;
+}
+
+.tasks button{
+    width: 15%;
+}
+
